@@ -41,7 +41,6 @@ class TestCases(unittest.TestCase):
 
     @patch('clock.play_alarm')
     def test_play_alarm(self, mock_play_alarm):
-        pass
         self.assertFalse(mock_play_alarm.called)
         mock_play_alarm()
         self.assertTrue(mock_play_alarm.called)
